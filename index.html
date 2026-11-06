@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-Lab | AI Web Games Hub</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p.subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.4rem;
+        }
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #0f172a;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: #0ea5e9;
+        }
+        footer {
+            margin-top: auto;
+            padding-top: 40px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎮 Game-Lab Hub</h1>
+        <p class="subtitle">Koleksi game mini web/HTML5 pilihan yang dibuat dan dikembangkan bersama AI.</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div>
+                <h3>🧸 Toys vs. Nightmares</h3>
+                <p>Game RPG / Idle bertema melindungi tidur si kecil dari serangan mimpi buruk. Kumpulkan Bulan & Permata serta tingkatkan kekuatanmu!</p>
+            </div>
+            <a href="https://github.com/rennxddhitz-source/PlayGround" class="btn" target="_blank">Mainkan / Lihat Repo</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>🚀 Space Shooter</h3>
+                <p>Game arcade klasik tembak-tembakan luar angkasa. Hancurkan musuh sebanyak mungkin dan raih skor tertinggi!</p>
+            </div>
+            <a href="https://github.com/rennxddhitz-source/AI-Game-Studio" class="btn" target="_blank">Mainkan / Lihat Repo</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 rennxddhitz-source. Built with AI & GitHub.
+    </footer>
+
+</body>
+</html>
